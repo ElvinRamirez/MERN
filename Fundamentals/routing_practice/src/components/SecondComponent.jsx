@@ -11,9 +11,9 @@ const SecondComponent = (props) =>{
                 isNaN(word)?
                 //ternary
                 //if the paramater isn't a number do:
+                //color? = does color exist?
+                //if color doesn't exist = null
                 <p style={color?{color: color, backgroundColor: backgroundCol} :null}>
-                    //color? = does color exist?
-                    //if color doesn't exist = null
                     The word is: {word}
                 </p>
                 :
