@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Main from './views/Main';
 import Detail from './components/Detail';
+import Update from './components/Update';
 
 //import ProductList from './components/ProductList';
 //import ProductForm from './components/ProductForm';
@@ -12,9 +13,10 @@ function App() {
     <div className="App d-flex justify-content-center">
       <BrowserRouter> 
         <Routes>
-          <Route element={<Main/>} path="/home" default />
-          <Route element={<Detail/>} path="/product/:id" />
-        </Routes>
+            <Route element={<Main/>} path="/home" default />
+            <Route element={<Detail/>} path="/product/:id" />
+            <Route element ={<Update/>}path="/product/edit/:id"/>        
+          </Routes>
       </BrowserRouter> 
     </div>
   );
